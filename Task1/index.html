@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CGSG forever!!!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <p>
+      <form action = 'index.html' method="get"></form>
+      <br /><input type = 'text' name ='a' value="hi"/>
+      <br /><input type = 'time' name ='b' value='10:30'/>
+      <br /><input type = 'date' name ='c' value='2023-06-02'/>
+      <br /><input type = 'checkbox' name ='d'/>
+      <br /><input type = 'color' name ='e' value ='1'/>
+      <br /><input type = 'password' name ='f' value ='TM2 lox'/>
+      <br /><input type = 'button' name ='g' value ='dk2'/>
+      <br /><input type = 'datetime-local' name ='h' value ='2023-06-02 10:30'/>
+       <br /><input type = 'image' name ='i' alt = 'dk2' src="/kurt.jpg"/> 
+      <br /><input type = 'image' name ='k' src="/nnn.jpg"/>
+      <br /><input type = 'range' name ='l' min="0" max="100" value="90" step="10"/>
+      <br /><input type = 'radio' name ='s' value ='male' checked/>M
+      <br /><input type = 'radio' name ='s' value ='female'/>Ж
+      <select name="Gender">
+        <option value="undefinded">не определен</option>option>
+        <option value="male">мужчина</option>option>
+        <option value="female">женщина</option>option>
+        </select>
+    </p> -->
+    <!-- <h1>Заголовок</h1> -->
+     <div id="a1">DK2</div>
+    <canvas
+      id="glCanvas"
+      width="200px"
+      height="200px"
+      style="border: 1px Solid Red"
+  
+    ></canvas>
+
+    <script type="module">
+      import {Timer} from "./timer.js"
+      let myTimer = new Timer();
+      
+      myTimer.response();
+      let time = myTimer.localTime; 
+     
+     // myTimer.isPause = !myTimer.isPause;
+      myTimer.response('fps'); 
+    </script>
+   
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+  document.body.onkeydown =
+  function(e){
+    if (e.code == 'ArrowUp')
+        document.bgColor = 'Red';
+      if (e.code == 'ArrowDown')
+        document.bgColor = 'White';
+    };
+  initGL();
+  window.setInterval(() => {
+         Render();
+             }, 30);
+});
+    //   window.addEventListener("load", () => {
+    //     initGL();
+    //     let tag = document.getElementById("a1");
+    //     if (tag != null)
+    //       tag.innerHTML = "OpenGL is initialized";
+    //     window.setInterval(() => {
+    //       Render();
+    //     }, 30);
+    //   });
+    //<!--onmousemove="myDragHandle(event, this)"
+      //<!-- onmousewheel="myWheelHandle(event, this)" -->
+    </script>
+  </body>
+</html>
